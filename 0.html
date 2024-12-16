@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Mariamawit, a computer science student.">
+    <meta name="keywords" content="portfolio, computer science, programming, web development">
+    <meta name="author" content="Mariamawit">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            background-image: url('C:\Users\temes\Downloads\pexels-steve-130217-759550.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            position: relative;
+        }
+
+        .hi-message {
+            margin: 20px auto;
+            max-width: 800px; /* Limit the width */
+            font-size: 18px; /* Adjust font size */
+            text-align: center; /* Center the text */
+            padding: 10px; /* Add padding */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 51, 102, 0.8);
+            padding: 10px 20px;
+            border-radius: 50px; /* Oval shape */
+            margin: 20px 0; /* Space above and below the navbar */
+        }
+
+        .menu {
+            display: flex;
+            margin-left: 20px; /* Push the menu to the right */
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            transition: background 0.3s;
+            border-radius: 20px; /* Rounded corners */
+        }
+
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .hero.text{
+            padding:20px;
+            width:150px;
+            height:150px;
+             border-radius:50%;
+             border:3px solid  #fff;
+        }
+
+        .content {
+            padding: 50px 20px;
+            color: #000;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            display: none; 
+        }
+
+        #home,
+        #about,
+        #contact,
+        #services {
+            background-color: #ffffff; 
+        }
+
+        h1, h2, h3 {
+            color: #003366; 
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 18px; 
+            line-height: 1.5;
+            margin: 0; 
+            overflow-wrap: break-word; 
+        }
+
+        .form {
+            margin: 20px auto;
+            max-width: 300px;
+            background: #800000; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #9FE2BF;
+        }
+
+        .form input {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btnn {
+            width: 100%;
+            color: #fff;
+            background: #ff6f61; 
+            border: none;
+            height: 40px;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.4s ease;
+        }
+
+        .btnn:hover {
+            background: #ff9f8f; 
+            color: #660000; 
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column; 
+            }
+            .content {
+                padding: 20px; 
+            }
+            h1, h2, h3 {
+                font-size: 24px; 
+            }
+            p {
+                font-size: 16px; 
+            }
+        }
+        #home.active,
+        #about.active,
+        #contact.active,
+        #services.active {
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#services">Services</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hi-message">
+            Hello! My name is Mariamawit, and I'm currently learning CSS and HTML. I'm excited to share my journey with you as I explore the world of web development. Feel free to check out my projects and progress!
+            <br><br>
+            Thank you for visiting!
+            </div>
+            <div class="hero.text">
+            <img src="C:\Users\temes\Desktop\Master Folder\photo_2024-12-02_12-52-39.jpg alt="profile picture"
+        </div>
+        
+        <div class="content" id="home">
+            <h1>Home</h1>
+            <p>Hello! I'm Mariamawit, a passionate computer science student. You can find my portfolio here.</p>
+        </div>
+        
+        <div class="content" id="about">
+            <h2>About Me</h2>
+            <p>I am a computer science student passionate about computers, their language, and how they work. I'm in the process of learning programming languages and enjoy working on innovative projects. My goal is to become a software engineer and contribute to meaningful technology solutions.</p>
+        </div>
+        
+        <div class="content" id="contact">
+            <h3>Contact</h3>
+            <p>Sign up Here:)</p>
+            <p>Enter your Email to contact me.</p>
+            <div class="form">
+                <input type="email" name="email" placeholder="Enter Email Here" required>
+                <input type="password" name="password" placeholder="Enter Password Here" required>
+                <button class="btnn">Sign up</button>
+            </div>
+        </div>
+        
+        <div class="content" id="services">
+            <h2>Services</h2>
+            <p>As a beginner coder, I'm currently building my skills in web development and programming. Some of the areas where I can help are:</p>
+            <ul>
+                <li>I can create simple websites using HTML, CSS, and JavaScript.</li>
+                <li>I can help review your code and offer suggestions for improvement.</li>
+                <li>Are you looking for a coding friend? If so, I’m open to collaborating on small projects and learning together!</li>
+                <li>I can assist with troubleshooting basic coding issues.</li>
+            </ul>
+            <p>I'm excited to grow my skills and take on new challenges, so feel free to reach out if you have a project in mind!</p>
+        </div>
+    </main>
+
+    <script>
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.content').forEach(section => {
+                    section.classList.remove('active'); 
+                });
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    targetSection.classList.add('active'); 
+                }
+            });
+        });
+    </script>
+</body>
+</html>

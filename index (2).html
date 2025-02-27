@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+           <head>
+           <meta charset="UTF-8">
+                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                    <title>Personal Website</title>
+                                    <style>
+body {
+font-family:
+	Arial, Helvetica, sans-serif;
+background-color:
+#f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+.hero {
+text-align:
+	center;
+	padding: 50px 20px;
+background-image:
+	url('h.jpg');
+background-size:
+	cover;
+background-position:
+	center;
+color:
+#fff;
+}
+
+.navbar {
+display:
+	flex;
+justify-content:
+	space-between;
+align-items:
+	center;
+background-color:
+	rgba(51, 51, 51, 0.8);
+	padding: 10px 20px;
+}
+
+.menu {
+margin-left:
+	auto;
+}
+
+.menu ul {
+list-style:
+	none;
+	padding: 0;
+	margin: 0;
+display:
+	flex;
+}
+
+.menu ul li {
+	margin: 0 15px;
+}
+
+.menu ul li a {
+color:
+#fff;
+text-decoration:
+	none;
+}
+
+.content {
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px  #4B0082;
+position:	relative; /* Position relative for absolute positioning of inner elements */
+background:transparent; /* Make the background transparent */
+
+color:#0000A0; /* Change text color */
+}
+
+#contact {
+background-color:
+ 	#FFF8DC; /* Semi-transparent background for contact */
+color:
+#6A5ACD;
+}
+
+#contact h3 {
+color:
+#0000FF;
+}
+
+.form {
+	margin: 20px auto;
+	max-width: 300px;
+background:
+#D8BFD8; /* Semi-transparent background for form */
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px ;
+}
+
+.form input {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.btnn {
+	width: 100%;
+color:
+#fff;
+background:
+#800000;
+border:
+	none;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 18px;
+cursor:
+	pointer;
+	transition: 0.4s ease;
+}
+
+.btnn:
+hover {
+background:
+ 	#D2691E;
+color:
+#ff7200;
+}
+
+h1, h2, h3 {
+color:
+#800000;
+}
+
+@media (max-width: 600px) {
+	.navbar {
+flex-direction:
+		column;
+align-items:
+		flex-start;
+	}
+
+	.menu ul {
+flex-direction:
+		column;
+	}
+
+	.menu ul li {
+		margin: 5px 0;
+	}
+}
+</style>
+</head>
+<body>
+<div class="hero">
+	           <div class="navbar">
+		                      <div class="menu">
+			                                 <ul>
+			                                 <li><a href="#home">Home</a></li>
+			                                         <li><a href="#about">About</a></li>
+			                                                 <li><a href="#contact">Contact</a></li>
+			                                                         <li><a href="#services">Services</a></li>
+			                                                                 </ul>
+			                                                                 </div>
+			                                                                 </div>
+			                                                                 <div class="content" id="home">
+				                                                                         <h1>Home</h1>
+				                                                                         <p>Hello! Welcome to my website! I'm Mariamawit, a passionate computer science student. You can find my portfolio here.</p>
+				                                                                         </div>
+				                                                                         <div class="content" id="about">
+					                                                                                 <h2>About Me</h2>
+					                                                                                 <p>I am a computer science student passionate about computers, their language, and how they work. I'm in the process of learning programming languages and enjoy working on innovative projects. My goal is to become a software engineer and contribute to meaningful technology solutions.</p>
+					                                                                                 </div>
+					                                                                                 <div class="content" id="contact">
+						                                                                                         <h3>Contact</h3>
+						                                                                                         <p>Enter your Email to contact me</p>
+						                                                                                         <h3>Sign up Here</h3>
+						                                                                                         <div class="form">
+							                                                                                                 <input type="email" name="email" placeholder="Enter Email Here" required>
+							                                                                                                         <input type="password" name="password" placeholder="Enter Password Here" required>
+							                                                                                                                 <button class="btnn">Sign up</button>
+								                                                                                                                         </div>
+								                                                                                                                         </div>
+								                                                                                                                         <div class="content" id="services">
+									                                                                                                                                 <h2>Services</h2>
+									                                                                                                                                 <p>As a beginner coder, I'm currently building my skills in web development and programming. Some of the areas where I can help are:</p>
+									                                                                                                                                 <ul>
+									                                                                                                                                 <li>I can create simple websites using HTML, CSS, and JavaScript.</li>
+									                                                                                                                                 <li>I can help review your code and offer suggestions for improvement.</li>
+									                                                                                                                                 <li>Are you looking for a coding friend? If so, I’m open to collaborating on small projects and learning together!</li>
+<li>I can assist with troubleshooting basic coding issues.</li>
+            </ul>
+ <p>I'm excited to grow my skills and take on new challenges, so feel free to reach out if you have a project in mind!</p>
+        </div>
+    </div>
+</body>
+</html>
